@@ -1,0 +1,50 @@
+<svg viewBox="0 0 580 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Diamond Outline on Left -->
+  <polygon
+    points="75,10 145,80 75,150 5,80"
+    stroke="#8A8A8A"
+    stroke-width="3"
+    fill="none"
+    stroke-linejoin="miter"
+  />
+
+  <!-- Red Geometric Emblem (#FF393B) -->
+  <g fill="#FF393B">
+    <!-- Row 0 -->
+    <polygon points="85,38 108,15 108,38" />
+    <rect x="111" y="15" width="23" height="23" rx="1.5" />
+    <rect x="137" y="15" width="23" height="23" rx="1.5" />
+    <polygon points="163,15 186,38 163,38" />
+
+    <!-- Row 1 -->
+    <rect x="85" y="41" width="23" height="23" rx="1.5" />
+    <rect x="163" y="41" width="23" height="23" rx="1.5" />
+
+    <!-- Row 2 -->
+    <rect x="85" y="67" width="23" height="23" rx="1.5" />
+    <rect x="163" y="67" width="23" height="23" rx="1.5" />
+
+    <!-- Row 3 -->
+    <polygon points="85,93 108,93 108,116" />
+    <rect x="111" y="93" width="23" height="23" rx="1.5" />
+    <polygon points="137,93 160,93 137,116" />
+    <rect x="163" y="93" width="23" height="23" rx="1.5" />
+
+    <!-- Row 4 -->
+    <rect x="163" y="119" width="23" height="23" rx="1.5" />
+  </g>
+
+  <!-- Lowercase "aarpu" Wordmark -->
+  <text
+    x="208"
+    y="114"
+    fill="#171717"
+    font-size="112"
+    font-weight="400"
+    font-family="'Plus Jakarta Sans', 'Comfortaa', 'Montserrat', 'Century Gothic', sans-serif"
+    letter-spacing="-0.03em"
+  >
+    aarpu
+  </text>
+</svg>
+

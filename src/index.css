@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Questrial&family=League+Spartan:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-sans: 'Century Gothic', 'Questrial', 'League Spartan', 'Geometric Sans-Serif', 'CenturyGothic', AppleGothic, 'URW Gothic L', 'Avant Garde', Futura, sans-serif;
+  --font-display: 'Century Gothic', 'Questrial', 'League Spartan', 'Geometric Sans-Serif', 'CenturyGothic', AppleGothic, 'URW Gothic L', 'Avant Garde', Futura, sans-serif;
+  --font-heading: 'Century Gothic', 'Questrial', 'League Spartan', 'Geometric Sans-Serif', 'CenturyGothic', AppleGothic, 'URW Gothic L', 'Avant Garde', Futura, sans-serif;
+  
+  /* Aarpu Official Brand Palette */
+  --aarpu-red: #FF393B;
+  --aarpu-red-dark: #D92F32;
+  --aarpu-bg-primary: #FFFFFF;
+  --aarpu-bg-secondary: #F7F7F7;
+  --aarpu-light-gray: #EEEEEE;
+  --aarpu-border: #E2E2E2;
+  --aarpu-text-primary: #171717;
+  --aarpu-text-secondary: #5F5F5F;
+  --aarpu-text-muted: #8A8A8A;
+  
+  color-scheme: light;
+}
+
+body,
+#root,
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-display) !important;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+}
+
+body {
+  background-color: var(--aarpu-bg-primary);
+  color: var(--aarpu-text-primary);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Media Download & Drag Deterrence */
+img,
+video {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+/* Headings and Header Names Typography - Exact Century Gothic / Questrial Geometric Light Style */
+h1, h2, h3, h4, h5, h6,
+p, span, a, li, label, div,
+.font-display,
+.font-heading,
+.font-sans,
+header h1,
+header h2,
+header h3,
+.header-title,
+.heading-title {
+  font-family: var(--font-display);
+  letter-spacing: -0.025em;
+}
+
+/* Aarpu Button Utility Classes */
+.btn-aarpu-primary {
+  background-color: #FF393B;
+  color: #FFFFFF;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.875rem 1.75rem;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-aarpu-primary:hover {
+  background-color: #D92F32;
+  transform: translateY(-2px);
+}
+
+.btn-aarpu-secondary {
+  background-color: #FFFFFF;
+  color: #171717;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.875rem 1.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid #E2E2E2;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-aarpu-secondary:hover {
+  border-color: #FF393B;
+  color: #FF393B;
+  transform: translateY(-2px);
+}
+
+/* Clean Architectural Cards */
+.aarpu-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E2E2;
+  border-radius: 1rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.aarpu-card:hover {
+  border-color: rgba(255, 57, 59, 0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  transform: translateY(-3px);
+}
+
+/* Glass Panels tuned for clean white theme */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid #E2E2E2;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.glass-dock {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid #E2E2E2;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F0F0F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #FF393B;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D92F32;
+}
+
+/* Lenis smooth scroll fix */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Keyframe animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+/* Card / Image Zoom-Out Effect */
+@keyframes cardZoomOut {
+  0%, 100% {
+    transform: scale(1.08);
+  }
+  50% {
+    transform: scale(1.00);
+  }
+}
+
+.animate-card-zoom-out {
+  animation: cardZoomOut 8s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* Outward Diagonal Card Movement for 2x2 Square Product Grid */
+@keyframes diagonalOutTL {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-16px, -16px);
+  }
+}
+
+@keyframes diagonalOutTR {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(16px, -16px);
+  }
+}
+
+@keyframes diagonalOutBL {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-16px, 16px);
+  }
+}
+
+@keyframes diagonalOutBR {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(16px, 16px);
+  }
+}
+
+.animate-diagonal-tl {
+  animation: diagonalOutTL 8s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.animate-diagonal-tr {
+  animation: diagonalOutTR 8s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.animate-diagonal-bl {
+  animation: diagonalOutBL 8s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.animate-diagonal-br {
+  animation: diagonalOutBR 8s ease-in-out infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-card-zoom-out,
+  .animate-diagonal-tl,
+  .animate-diagonal-tr,
+  .animate-diagonal-bl,
+  .animate-diagonal-br,
+  .animate-product-breathe {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* Architectural grid background pattern */
+.bg-architecture-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, #EEEEEE 1px, transparent 1px),
+    linear-gradient(to bottom, #EEEEEE 1px, transparent 1px);
+}
+
+/* Hide scrollbar for clean UI */
+.no-scrollbar::-webkit-scrollbar,
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar,
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Slide Headline Pure Text Styling - More brighter and luminous with minimal shadow */
+.slide-text-white {
+  color: #FFFFFF !important;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.25) contrast(1.05);
+}
+
+.slide-text-red {
+  color: #FFFFFF !important;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.25) contrast(1.05);
+}
+
+/* Clean standard question mark font style */
+.question-mark-standard {
+  font-family: Arial, Helvetica, 'Plus Jakarta Sans', sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
